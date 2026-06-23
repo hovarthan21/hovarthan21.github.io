@@ -94,6 +94,7 @@ Raw SAR data is numbers — backscatter intensity values per pixel. ML converts 
 **The classification pipeline:**
 
 **Step 1 — Feature extraction**
+
 From each pixel, extract features:
 - VV backscatter value
 - VH backscatter value
@@ -102,6 +103,7 @@ From each pixel, extract features:
 - Texture metrics (GLCM — contrast, homogeneity, entropy of pixel neighborhoods)
 
 **Step 2 — Training data**
+
 The model needs labeled examples. You give it:
 - Pixels you know are forest → label: forest
 - Pixels you know are water → label: water
@@ -120,6 +122,7 @@ Common models used in GeoAI land classification:
 - **Transformer-based models** — newer approach, captures long-range spatial dependencies. Used for large-scale mapping.
 
 **Step 4 — Output**
+
 A classified map where every pixel is assigned a land cover type. From a single Sentinel-1 SAR scene covering 250 × 250 km, you get a complete land cover map updated every 6–12 days.
 
 **What ML detects that humans miss:**
