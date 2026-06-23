@@ -187,12 +187,14 @@ Here is the reality: a CNN model trained on satellite data is only as good as th
 **What data science contributes that AI alone cannot:**
 
 **1. Data cleaning and harmonization**
+
 Satellite data comes with noise — atmospheric interference, sensor artifacts, missing data from cloud cover. Data science pipelines handle:
 - Cloud masking using quality band information
 - Gap filling using temporal interpolation
 - Normalization across different satellite sensors and acquisition dates
 
 **2. Feature engineering**
+
 Raw backscatter values are not enough. Data scientists create meaningful features:
 - Vegetation indices (NDVI, NDWI) from optical bands
 - Backscatter ratios and temporal statistics
@@ -202,9 +204,11 @@ Raw backscatter values are not enough. Data scientists create meaningful feature
 These engineered features dramatically improve model accuracy.
 
 **3. Spatial statistics**
+
 Not all patterns in geospatial data are random. PySAL tools like Moran's I test whether detected anomalies cluster spatially — which separates real environmental signals from random noise.
 
 **4. Scale and projection management**
+
 A single analysis might combine:
 - SAR data at 10m resolution
 - Administrative boundaries from GADM at 1:1,000,000 scale
@@ -214,6 +218,7 @@ A single analysis might combine:
 Data science handles the reprojection, resampling, and alignment of all these layers before any ML model sees them.
 
 **5. Validation and uncertainty quantification**
+
 ML model outputs need accuracy assessment. Data science provides:
 - Confusion matrices and accuracy metrics (Overall Accuracy, Kappa coefficient, F1 score)
 - Cross-validation strategies that account for spatial autocorrelation
@@ -298,4 +303,4 @@ That is what GeoAI means. Not just better maps. A continuously updated, AI-inter
 
 ---
 
-*Author: Hovarthan S | Practitioner in GeoAI, satellite remote sensing, and geospatial data science. Working with Copernicus, Google Earth Engine, MintPy, GeoPandas, and Rasterio on real-world earth observation problems.*
+*Author: Hovarthan S | AI/ML Developer & Researcher. Working on GeoAI and Data Science to develope an advanced AI to save Billions of lives across the world.*
