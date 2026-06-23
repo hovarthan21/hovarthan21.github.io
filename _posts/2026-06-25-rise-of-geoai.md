@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Rise of GeoAI: Where Artificial Intelligence Meets Data Science and Earth Observation"
-date: 2026-06-12
+date: 2026-06-25
 author: Hovarthan S
 tags: [GeoAI, SAR, Remote Sensing, Data Science, Machine Learning, Earth Observation]
 ---
